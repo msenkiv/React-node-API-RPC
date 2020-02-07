@@ -29,6 +29,7 @@ module.exports = {
             time: req.time
         };
 
+        console.log(rpcUrl + timers.date)
         let caller = await axios.get(rpcUrl + timers.date);
         let resp = caller.data.programme.entries;
             //TAKE UTILIZABLE INFO
@@ -36,8 +37,8 @@ module.exports = {
             let programing = {
                 title: prog.title,
                 description: prog.description,
-                start: parseDate(prog.human_start_time, timers),
-                end: parseDate(prog.human_end_time, timers),
+                start: moment.unix(prog.start_time),
+                end: moment.unix(prog.end_time),
                 mainImg: prog.custom_info.Graficos.ImagemURL,
                 logoImg: prog.custom_info.Graficos.LogoURL
             };
