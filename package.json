@@ -1,0 +1,25 @@
+{
+    "name": "handkeys",
+    "version": "1.0.0",
+    "description": "Teste Node e react",
+    "main": "index.js",
+    "engines": {
+        "node": "10.15.0",
+        "npm": "6.4.1"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "server": "node index.js",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\"  \"npm run client\""
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "concurrently": "^5.0.2",
+        "datejs": "^1.0.0-rc3",
+        "express": "^4.17.1",
+        "moment": "^2.24.0"
+    }
+}
