@@ -16,8 +16,5 @@ module.exports = app => {
         const list = await worker.getRpcprogramming(req.query);
         res.send(list);
     });
-    app.get("/rpc/now", async(req, res) => {
-        const response = await worker.getProgNow(req.query);
-        res.send(response);
-    });
+
 };

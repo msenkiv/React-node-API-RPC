@@ -17,6 +17,10 @@ Como desenvolvedor de aplicações para web, você precisa construir uma aplicação 
     - Volte para o diretorio raiz do projeto e rode o projeto com o comando "npm run dev"
     - A PÃ¡gina no browser abrirÃ¡ automaticamente na porta localhost:3000
 
+    - A API se encontra na porta 5000 e possui a rota: 
+      GET - "/rpc/list?date=<AAAA-MM-DD>"
+
+
 ### biliotecas utilizadas
 #### Node 13.6.0:
   - Moment - trabalhar com as horas do projeto
