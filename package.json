@@ -19,7 +19,7 @@
         "axios": "^0.19.2",
         "concurrently": "^5.0.2",
         "datejs": "^1.0.0-rc3",
-        "express": "^4.17.1",
+        "express": "^4.18.2",
         "moment": "^2.24.0",
         "moment-timezone": "^0.5.27"
     }
